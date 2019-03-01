@@ -1,0 +1,38 @@
+""" write a python code for the below task.For this use dictionary data type"""
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Let us suppose that You are incharge of the Database which contains all the Bithdates of
+the students of a particular class.
+
+Task:
+1.when user gives the name of a student you have to print the birthday of that person.
+2.If there is no record of the birthdate for that student ask the user to give the birthdate
+  of the student user requested and then print Birthday database is updated
+
+Repeat this process untill the user enters a blank name(in other words blank to quit or out of the program)
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+solution:
+
+"""this is my solution if you came up with something different let me know i will add it mentioning your name"""
+
+#birthday database
+Birthdays={'Ram':'jan 2','Sandhya':'jan 12','Swamy':'mar 12','Dad':'dec 15'}
+while True:
+	print("enter the name of the student to know their birthdate:(blank to exit)")
+	name=input()
+	if name=="":
+		break
+
+	if name in Birthdays:
+		print(Birthdays[name]+" is the bithday of "+ name)
+	else:
+		print("we dont have any  details about that student")
+		print("please enter the birthdate of "+name)
+		bday=input()
+		Birthdays[name]=bday
+		print("now we have updated our database")
+		print("""-----Thank You-----""")
