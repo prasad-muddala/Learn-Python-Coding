@@ -1,0 +1,7 @@
+Task 1:
+---------------------------------------------------------------------------------------
+Goal: To print the second highest value of a list or array
+Input format:
+1.first line contains the size of the list "n"
+2.second line contains the list of "n" unsorted/sorted elements separated by a space
+---------------------------------------------------------------------------------------
